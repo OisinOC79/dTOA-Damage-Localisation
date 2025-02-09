@@ -1,4 +1,4 @@
-##A MACHINE LEARNING BASED APPROACH TO DAMAGE LOCALISATION
+## A MACHINE LEARNING BASED APPROACH TO DAMAGE LOCALISATION
 
 ## NON-TECHNICAL EXPLANATION OF YOUR PROJECT
 The purpose of this project is to develop a model capable of localising damage within a complex structure, by using data that has been experimentally obtained from a network of sensors across a test-piece within a lab. In doing so, this model aims to provide maintenance operators and engineer's with a proof of concept for a machine learning based approach to maintenance and damage localisation, which could reduce the time and cost associated with maintenance activities such as visual inspections. Furthermore, by leveraging Bayesian Optimisation for model training, this model also attempts to reduce the volume of training data required for such modules, an obstacle that frequently prevents the application of machine learning in real engineering environments.
