@@ -15,7 +15,7 @@ In this instance, gaussian processes have been chosen because of their basis in 
 
 Lastly, I have chosen to use a gaussian process regression model as these models are compatible within acquisition functions of bayesian optimisation, often acting as surrogate models. This project concludes by implementing bayesian optimisation to selectively sample points for model training, which aims to reduce the amount of training data required by models whilst informing operators of structural regions where their training data collection should be more targeted.
 
-## HYPERPARAMETER OPTIMSATION
+## HYPERPARAMETER OPTIMISATION
 This model relies on using Gaussian Process Regression to allow for predictions of the damage source location to be made. I have chosen the Matern kernel for the implementation, which required for the tuning of 3 primary hyper-parameters. Namely, these are the signal variance, the length-scale and the noise variance. Using an approach discussed by Rasumussen and Williams, to tune these hyperparamters I have implemented a gradient based approach, aiming to find the combination of hyperparameters which minimise the model's Negative Log Marginal Likelihood. This was done through a combination of my scipy.minimise, using the NLML as the loss function argument in this case.
 
 ## RESULTS
