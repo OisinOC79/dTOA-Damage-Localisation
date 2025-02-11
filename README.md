@@ -19,8 +19,4 @@ Lastly, I have chosen to use a gaussian process regression model as these models
 This model relies on using Gaussian Process Regression to allow for predictions of the damage source location to be made. I have chosen the Matern kernel for the implementation, which required for the tuning of 3 primary hyper-parameters. Namely, these are the signal variance, the length-scale and the noise variance. Using an approach discussed by Rasumussen and Williams, to tune these hyperparamters I have implemented a gradient based approach, aiming to find the combination of hyperparameters which minimise the model's Negative Log Marginal Likelihood. This was done through a combination of my scipy.minimise, using the NLML as the loss function argument in this case.
 
 ## RESULTS
-A summary of your results and what you can learn from your model 
-
-You can include images of plots using the code below:
-![Screenshot](image.png)
- 
+This approach to damage localisation is hugely successful and can make predictions with minimal amount of error, this was assessed using the Root Mean Square Error, comparing the predicted location and the source location. One criticism of this approach is that it is quite computationally expensive, but the approach is reliant on developing multiple Gaussian Process Regression models. Alas, this is unavoidable. With that being said, the computational expense is not wasted, as predictions are made with good accuracy.
